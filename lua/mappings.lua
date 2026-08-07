@@ -12,3 +12,7 @@ map("i", "jk", "<ESC>")
 map("n", "<leader>fm", function()
   require("conform").format({ async = true })
 end, { desc = "Format file" })
+
+vim.keymap.set("n", "<C-l>", function ()
+  require("triforce").show_profile()
+end,{desc = "Show Triforce"})
